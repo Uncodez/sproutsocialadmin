@@ -31,7 +31,7 @@ async function run() {
       const { username, password } = req.body;
 
       // Replace this with your actual user collection and logic
-      const usersCollection = client.db("yourDatabaseName").collection("users");
+      const usersCollection = client.db("user").collection("table");
       const user = await usersCollection.findOne({ username, password });
 
       if (user) {
